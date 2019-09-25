@@ -1,0 +1,112 @@
+<!--@PoisonousPurple 2019 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="" class="active">Home</a>
+        <a href="/about/">Über Mich</a>
+        <a href="/content/">Content</a>
+        <a href="/social/">Social Media</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <center>
+        <div style="padding-left:16px" class="header">
+            <h1>PoisonousPurple</h1>
+            <h4><i>STREAMER // GAMER // HOBBIE-PROGRAMMIERER</i></h4>
+        </div>
+        <div class="content">
+            <!--
+                <div class="cont1 box">
+					<div class="cont">
+						Das Neueste Video
+					</div>
+					<div class="responsive-video-container">
+						<iframe class="vid1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/HkyRM8kvlp8?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
+						<iframe class="vid2" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/tMAUfbYpboE?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode nl</a></small></div><div><small><a href="http://delinkverzeichnis.de">www://delinkverzeichnis.de</a></small></div></iframe>
+					</div>
+				</div>
+                -->
+            <div class="cont2 box">
+                <div class="cont">
+                    Projekte
+                </div>
+                <!--PROJECTS-->
+                <a href="/content/projects/enter-the-gungeon/">
+                    <div class="project twitchandyt">
+                        Enter the Gungeon[Twitch&YT]
+                    </div>
+                </a>
+                <a href="/content/projects/cs-trash">
+                    <div class="project yt">
+                        CS:Trash[YT]
+                    </div>
+                </a>
+                <a href="/content/projects/asmr-cup">
+                    <div class="project twitch">
+                        CS:GO ASMR Cup[Twitch]
+                    </div>
+                </a>
+            </div>
+            <br>
+            <div class="cont3 box stream">
+                <a href="/streaming">
+                    <div class="cont">
+                        Meine Streamzeiten
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="footer">
+            <p>@PoisonousPurple 2019 </p>
+        </div>
+    </center>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        window.onload = function() {
+            $("body").fadeIn(1000);
+            $(".header").fadeOut(0);
+            $(".cont1").fadeOut(0);
+            $(".cont2").fadeOut(0);
+            $(".cont3").fadeOut(0);
+            $(".footer").fadeOut(0);
+            setTimeout(function() {
+                $(".header").fadeIn(500);
+            }, 1200);
+            setTimeout(function() {
+                $(".cont1").fadeIn(500);
+            }, 1400);
+            setTimeout(function() {
+                $(".cont2").fadeIn(500);
+            }, 1600);
+            setTimeout(function() {
+                $(".cont3").fadeIn(500);
+            }, 1800);
+            setTimeout(function() {
+                $(".footer").fadeIn(500);
+            }, 2000);
+        }
+
+    </script>
+</body>
+
+</html>
