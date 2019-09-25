@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    background-color: #f8f8f8;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    -webkit-box-shadow: 0px 10px 11px 4px rgba(179, 0, 179, 1);
+    -moz-box-shadow: 0px 10px 11px 4px rgba(179, 0, 179, 1);
+    box-shadow: 0px 10px 11px 4px rgba(179, 0, 179, 1);
+    -webkit-box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+    -moz-box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+    box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    -webkit-box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+    -moz-box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+    box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+    animation: glowoff 0.5s 1;
+}
+
+.topnav a:hover {
+    -webkit-box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+    -moz-box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+    box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+    animation: glow 0.5s 1;
+}
+
+.topnav a.active {
+    background-color: #b300b3;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.content {
+    position: relative;
+    width: 60%;
+    margin: 0;
+    background-color: 4c4c4c;
+}
+
+.header {
+    text-align: center;
+    margin: 25% 0px 25% 0px;
+    position: relative;
+    width: 60%;
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+    border-radius: 70px 0px 70px 0px;
+    -moz-border-radius: 70px 0px 70px 0px;
+    -webkit-border-radius: 70px 0px 70px 0px;
+    border: 0px solid #000000;
+    color: white;
+}
+
+.header h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.stream {
+    animation: streamglowoff 0.5s 1;
+}
+
+.stream:hover {
+    animation: streamglow 0.5s 1;
+    background: rgba(65, 2, 82, 1);
+    background: -moz-linear-gradient(top, rgba(65, 2, 82, 1) 0%, rgba(142, 0, 224, 1) 50%, rgba(65, 2, 82, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(65, 2, 82, 1)), color-stop(50%, rgba(142, 0, 224, 1)), color-stop(100%, rgba(65, 2, 82, 1)));
+    background: -webkit-linear-gradient(top, rgba(65, 2, 82, 1) 0%, rgba(142, 0, 224, 1) 50%, rgba(65, 2, 82, 1) 100%);
+    background: -o-linear-gradient(top, rgba(65, 2, 82, 1) 0%, rgba(142, 0, 224, 1) 50%, rgba(65, 2, 82, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(65, 2, 82, 1) 0%, rgba(142, 0, 224, 1) 50%, rgba(65, 2, 82, 1) 100%);
+    background: linear-gradient(to bottom, rgba(65, 2, 82, 1) 0%, rgba(142, 0, 224, 1) 50%, rgba(65, 2, 82, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#410252', endColorstr='#410252', GradientType=0);
+}
+
+@keyframes glow {
+    from {
+        -webkit-box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+        -moz-box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+        box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+    }
+
+    to {
+        -webkit-box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+        -moz-box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+        box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+    }
+}
+
+@keyframes glowoff {
+    from {
+        -webkit-box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+        -moz-box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+        box-shadow: inset 0px -60px 10px -49px rgba(179, 0, 179, 1);
+    }
+
+    to {
+        -webkit-box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+        -moz-box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+        box-shadow: inset 0px -60px 0px -57px rgba(179, 0, 179, 1);
+    }
+}
+
+.box {
+    width: 100%;
+    margin: 0;
+    height: 50%;
+}
+
+.content .cont {
+    position: relative;
+    margin: 10px;
+    padding: 20px 0 20px 0;
+    display: block;
+    width: 100%;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+    background: #121212;
+}
+
+
+.responsive-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.content iframe {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .header h1 {
+        width: 100%;
+        color: red;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header h1 {
+        width: 100%;
+        color: red;
+    }
+}
+
+.project {
+    position: relative;
+    background-color: #313131;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    color: white;
+}
+
+.project:hover {
+    background-color: #515151;
+    cursor: pointer;
+}
+
+.yt {
+    -webkit-box-shadow: inset 14px 0px 0px 0px rgba(255, 0, 0, 1);
+    -moz-box-shadow: inset 14px 0px 0px 0px rgba(255, 0, 0, 1);
+    box-shadow: inset 14px 0px 0px 0px rgba(255, 0, 0, 1);
+}
+
+.twitch {
+    -webkit-box-shadow: inset 15px 0px 0px 0px rgba(100, 65, 165, 1);
+    -moz-box-shadow: inset 15px 0px 0px 0px rgba(100, 65, 165, 1);
+    box-shadow: inset 15px 0px 0px 0px rgba(100, 65, 165, 1);
+}
+
+.twitchandyt {
+    -webkit-box-shadow: inset 15px 0px 0px 0px rgba(100, 65, 165, 1), inset 28px 0px 0px 0px rgba(255, 0, 0, 1);
+    -moz-box-shadow: inset 15px 0px 0px 0px rgba(100, 65, 165, 1), inset 28px 0px 0px 0px rgba(255, 0, 0, 1);
+    box-shadow: inset 15px 0px 0px 0px rgba(100, 65, 165, 1), inset 28px 0px 0px 0px rgba(255, 0, 0, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    padding: 2% 0 2% 0;
+    background-color: #121212;
+    color: white;
+}
+
+iframe {
+    color: black;
+    border-style: hidden;
+}
