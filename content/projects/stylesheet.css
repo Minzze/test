@@ -1,0 +1,176 @@
+body 
+{
+	margin: -10px;
+	font-family: Arial, Helvetica, sans-serif;
+	display:none;
+	background-color:#121212;
+	color:white;
+	overflow-x: hidden;
+}
+
+.topnav 
+{
+	overflow: hidden;
+	margin:10px;
+	background-color: #333;
+	-webkit-box-shadow: 0px 10px 11px 4px rgba(179,0,179,1);
+	-moz-box-shadow: 0px 10px 11px 4px rgba(179,0,179,1);
+	box-shadow: 0px 10px 11px 4px rgba(179,0,179,1);
+	-webkit-box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+	-moz-box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+	box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+}
+
+.topnav a 
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	-webkit-box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+	-moz-box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+	box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+	animation: glowoff 0.5s 1;
+}
+
+.topnav a:hover 
+{
+	-webkit-box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+	-moz-box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+	box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+	animation:glow 0.5s 1;
+}
+
+.topnav a.active 
+{
+	background-color: #b300b3;
+	color: white;
+}
+
+.topnav .icon 
+{
+	display: none;
+}
+.info {
+	padding:30px 10px 30px 10px;
+	margin:0px;
+}
+.info h1{
+	padding:0 10px 0 10px;
+	text-align: center;
+}
+.info img {
+	width: 100%;
+	margin-top:-40px;
+}
+.description {
+	display: box;
+	width: 65%;
+	font-size: 18px;
+	text-align: left;
+}
+.epicgames {
+	background-color: #353535;
+	padding:15px;
+	cursor: pointer;
+	margin:50px 10px 20px 10px;
+}
+.steam {
+	background-color: #1e3350;
+	padding:15px;
+	cursor: pointer;
+	margin:20px 10px 20px 10px;
+}
+.instantgaming {
+	background-color: #ff5400;
+	padding:15px;
+	cursor: pointer;
+	margin:20px 10px 20px 10px;
+}
+.buy {
+	margin: 50px 0px 20px 0px;
+}
+a {
+	text-decoration:none;
+	color:white;
+}
+iframe {
+	margin:10px;
+}
+h4 {
+	margin:15% 10px 20px 10px;
+	background-color:rgba(255, 255, 255, 0.3);
+	display:box;
+	position:relative;
+	padding:20px;
+}
+@media screen and (max-width: 600px)
+{
+	
+	.topnav a:not(:first-child) 
+	{
+	  display: none;
+	}
+	
+	.topnav a.icon 
+	{
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) 
+{
+	
+	.topnav.responsive 
+	{
+		position: relative;
+	}
+	
+	.topnav.responsive .icon 
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a 
+	{
+    float: none;
+    display: block;
+    text-align: left;
+	}
+}
+@keyframes glow
+{
+	from 
+	{
+		-webkit-box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+		-moz-box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+		box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+	}
+	to 
+	{
+		-webkit-box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+		-moz-box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+		box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+	}
+}
+
+@keyframes glowoff
+{
+	from 
+	{
+		-webkit-box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+		-moz-box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+		box-shadow: inset 0px -60px 10px -49px rgba(179,0,179,1);
+	}
+	to 
+	{
+		-webkit-box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+		-moz-box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+		box-shadow: inset 0px -60px 0px -57px rgba(179,0,179,1);
+	}
+}

@@ -1,0 +1,64 @@
+<!--@PoisonousPurple 2019 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<title>Enter the Gungeon - Poisonous Purple</title>
+</head>
+
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="../">Home</a>
+		<a href="/about">Über Mich</a>
+		<a href="/content" class="active">Content</a>
+		<a href="/socials">Social Media</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+		window.onload = function () {
+			$("body").fadeIn(1000);
+			$(".header").fadeOut(0);
+			setTimeout(function () {
+				$(".header").fadeIn(500);
+			}, 1200);
+		}
+	</script>
+	<div class="info"><img src="https://images7.alphacoders.com/695/thumb-1920-695342.png">
+		<h1>Enter the Gungeon</h1>
+		<center>
+			<div class="description">Enter the Gungeon ist ein Baller-Dungeoncrawler, bei dem eine Gruppe von reumütigen
+				Außenseitern durch Schießen, Plündern, Ausweichrollen und das Umkippen von Tischen die persönliche
+				Erlösung zu finden versucht. Dazu müssen sie zum ultimativen Schatz des Gungeons gelangen: zur Waffe,
+				die die Vergangenheit abschießen kann. Wähle einen Helden und kämpfe dich bis ans Ende des Gungeons vor,
+				indem du eine anspruchsvolle, sich weiterentwickelnde Folge von Ebenen überlebst. Du wirst knuffigen,
+				aber gefährlichen Geschosslingen und furchteinflößenden Gungeon-Bossen begegnen. Sammle wertvolle Beute,
+				entdecke verborgene Geheimnisse und sprich mit opportunistischen Händlern, um dir mächtige Gegenstände
+				und den entscheidenden Vorteil zu sichern. <i><a style="color:#b300b3;" target="blank"
+						href="https://store.steampowered.com/app/311690/Enter_the_Gungeon/#game_area_description"> [mehr Infos...]</a></i>
+			</div>
+			<div class="buy"><a class="btn epicgames" target="_blank"
+					href="https://www.epicgames.com/store/de/product/enter-the-gungeon/home">Im Epicgames Store
+					kaufen</a><a class="btn steam" target="_blank"
+					href="https://store.steampowered.com/app/311690/Enter_the_Gungeon/">Bei Steam kaufen</a><a
+					class="btn instantgaming" target="_blank"
+					href="https://www.instant-gaming.com/de/1389-kaufen-key-steam-enter-the-gungeon/">Bei Instant Gaming
+					Kaufen</a></div>
+		</center>
+
+	</div>
+</body>
